@@ -4,6 +4,7 @@ const slides = [
   // ✅ Banner 1 (responsive, centered)
   {
     image: "/images/banner1.webp",
+    imageSM: "/images/banner1-sm.webp",
     title: (
       <span
         className="
@@ -27,14 +28,15 @@ const slides = [
 
   // ✅ Banner 2 (left aligned, text shifted upward a little bit)
   {
-    image: "/images/F1.png",
+    image: "/images/F1.webp",
+    imageSM: "/images/F1-sm.webp",
     title: (
       <span
         className="
         block
         text-left
         font-semibold 
-        text-[#9BC936]
+        text-[#fff]
         leading-snug
         pl-4 md:pl-8
         w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
@@ -55,7 +57,8 @@ const slides = [
 
   // ✅ Banner 3 (right aligned, responsive)
   {
-    image: "/images/ca.jpg",
+    image: "/images/ca.webp",
+    imageSM: "/images/ca-sm.webp",
     title: (
       <span
         className="
@@ -80,7 +83,8 @@ const slides = [
 
   // ✅ Banner 4 (unchanged)
   {
-    image: "/images/banner2.jpg",
+    image: "/images/banner4.jpg",
+    imageSM: "/images/banner4-sm.jpg",
     title: (
       <span
         style={{
@@ -100,7 +104,8 @@ const slides = [
   },
     // ✅ Banner 5 (right aligned, responsive like banner 3)
   {
-  image: "/images/banner3.jpg",
+  image: "/images/banner5.jpg",
+  imageSM: "/images/banner5-sm.webp",
   title: (
     <div className="relative w-full flex justify-center -mt-24">
       <span
@@ -148,13 +153,22 @@ const Hero = () => {
     return () => clearInterval(intervalRef.current);
   }, []);
 
-  const { image, title, row } = slides[currentSlide];
+  const { image, title, row, imageSM } = slides[currentSlide];
 
   return (
     <section
       className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
       style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}
     >
+      <picture>
+        {/* Show imageSM if screen ≤ 640px (mobile) */}
+        {imageSM && <source srcSet={imageSM} media="(max-width: 640px)" />}
+        <img
+          src={image}
+          alt="Slide background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </picture>
       {/* Gradient Overlay */}
       <div
         className={`
