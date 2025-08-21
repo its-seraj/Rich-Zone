@@ -28,8 +28,8 @@ const slides = [
 
   // ✅ Banner 2 (left aligned, text shifted upward a little bit)
   {
-    image: "/images/F1.webp",
-    imageSM: "/images/F1-sm.webp",
+    image: "/images/banner2.jpg",
+    imageSM: "/images/banner2-sm.jpg",
     title: (
       <span
         className="
@@ -57,8 +57,8 @@ const slides = [
 
   // ✅ Banner 3 (right aligned, responsive)
   {
-    image: "/images/ca.webp",
-    imageSM: "/images/ca-sm.webp",
+    image: "/images/banner3.jpg",
+    imageSM: "/images/banner3-sm.jpg",
     title: (
       <span
         className="
