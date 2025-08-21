@@ -49,7 +49,7 @@ const slides = [
 
       "
       >
-        <span className="relative text-[#9BC936]">India’s</span>{" "}
+        {/* <span className="relative text-[#9BC936]">India’s</span>{" "} */}
         Your Trusted Partner in Import, Export & Filler Masterbatch.
       </span>
     ),
@@ -64,7 +64,7 @@ const slides = [
         className="
           block 
           text-right 
-          text-[#9BC936] 
+          text-[#fff]
           font-semibold 
           leading-snug
           mr-4 md:mr-12
