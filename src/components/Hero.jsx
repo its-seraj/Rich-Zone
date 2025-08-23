@@ -15,8 +15,6 @@ const slides = [
           w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[70vw]
           text-5xl sm:text-5xl md:text-4xl lg:text-7xl
           mx-auto
-          drop-shadow-xl
-          drop-shadow-black
         "
       >
         <span className="relative text-[#9BC936]">India’s</span>{" "}
@@ -42,9 +40,7 @@ const slides = [
         w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
         text-5xl sm:text-5xl md:text-4xl lg:text-7xl
         relative 
-        -mt-54
-        drop-shadow-xl
-          drop-shadow-black
+        mt-10
         // top-[-22px]
 
       "
@@ -71,8 +67,6 @@ const slides = [
           w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
         text-5xl sm:text-5xl md:text-4xl lg:text-7xl
           ml-auto
-          drop-shadow-xl
-          drop-shadow-black
         "
       >
 
@@ -95,7 +89,6 @@ const slides = [
           flexDirection: "column",
           float: "right",
           marginRight: "8vw",
-          textShadow: "0 0 1px 10px black",
         }}
       >
         {/* Keep as-is */}
@@ -116,12 +109,10 @@ const slides = [
           font-semibold 
           leading-snug
           w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[70vw]
-          text-5xl sm:text-5xl md:text-4xl lg:text-7xl
+          text-4xl sm:text-5xl md:text-4xl lg:text-7xl
           mx-auto
           text-white
           z-10
-          drop-shadow-xl
-          drop-shadow-black
         "
       >
         Connecting{" "}
