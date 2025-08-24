@@ -64,7 +64,7 @@ const Footer = () => {
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-3xl" />
               <span>
-                RICHZONE WORLWIDE PVT LTD, No 57/A, Ground floor, 5th main, Behind Lila Pa, H.A.L ll Stage, Bangalore, KARNATAKA 560008
+                RICHZONE WORLWIDE PVT LTD, No 57/A, Ground floor, 5th main, Behind Leela Palace, H.A.L 2nd Stage, Bangalore, KARNATAKA 560008
               </span>
             </li>
             <li className="flex items-center gap-3">
