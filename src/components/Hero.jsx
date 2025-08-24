@@ -13,7 +13,7 @@ const slides = [
           font-semibold 
           leading-snug
           w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[70vw]
-          text-5xl sm:text-5xl md:text-4xl lg:text-7xl
+          text-4xl sm:text-4xl md:text-4xl lg:text-7xl
           mx-auto
         "
       >
@@ -38,7 +38,7 @@ const slides = [
         leading-snug
         pl-4 md:pl-8
         w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
-        text-5xl sm:text-5xl md:text-4xl lg:text-7xl
+        text-4xl sm:text-4xl md:text-4xl lg:text-7xl
         relative 
         mt-10
         // top-[-22px]
@@ -46,7 +46,7 @@ const slides = [
       "
       >
         {/* <span className="relative text-[#9BC936]">India’s</span>{" "} */}
-        Your Trusted Partner in Import, Export & Filler Masterbatch.
+        Your Trusted Partner in Import & Export of Filler Masterbatch.
       </span>
     ),
   },
@@ -59,15 +59,15 @@ const slides = [
       <span
         className="
           block 
-          text-right 
           text-[#fff]
           font-semibold 
+          text-center 
           leading-snug
-          mr-4 md:mr-12
-          w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
-        text-5xl sm:text-5xl md:text-4xl lg:text-7xl
-          ml-auto
+          w-[70vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
+          text-4xl sm:text-4xl md:text-4xl lg:text-7xl
+          mx-auto
         "
+        style={{ textShadow: "1px 1px 0 #9ac93680, -1px 1px 0 #9ac93680, 1px -1px 0 #9ac93680, -1px -1px 0 #9ac93680" }}
       >
 
         Delivering High-Quality Calcium Carbonate to Global Markets.
@@ -91,11 +91,27 @@ const slides = [
           marginRight: "8vw",
         }}
       >
-        {/* Keep as-is */}
+        <span
+          className="
+            block 
+            text-center 
+            text-[#9BC936]
+            font-semibold 
+            leading-snug
+            w-[70vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
+            text-4xl sm:text-4xl md:text-4xl lg:text-7xl
+            mx-auto
+            -mt-36
+          "
+          style={{ textShadow: "1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff" }}
+        >
+
+          India's Leading importer of Triply circles and distributor of triply utensils.
+        </span>
       </span>
     ),
   },
-    // ✅ Banner 5 (right aligned, responsive like banner 3)
+//     // ✅ Banner 5 (right aligned, responsive like banner 3)
   {
   image: "/images/banner5.jpg",
   imageSM: "/images/banner5-sm.webp",
@@ -109,7 +125,7 @@ const slides = [
           font-semibold 
           leading-snug
           w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[70vw]
-          text-4xl sm:text-5xl md:text-4xl lg:text-7xl
+          text-4xl sm:text-4xl md:text-4xl lg:text-7xl
           mx-auto
           text-white
           z-10
@@ -157,7 +173,9 @@ const Hero = () => {
         <img
           src={image}
           alt="Slide background"
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+            currentSlide === 0 ? "opacity-100" : "opacity-100"
+          }`}
         />
       </picture>
       {/* Gradient Overlay */}
