@@ -83,10 +83,10 @@ const slides = [
           mx-auto
           -mt-36
         "
-        style={{
-          textShadow:
-            "1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff",
-        }}
+        // style={{
+        //   textShadow:
+        //     "1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff",
+        // }}
       >
         India's Leading importer of Triply circles and distributor of triply utensils.
       </span>
